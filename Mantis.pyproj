@@ -11,9 +11,10 @@
     <OutputPath>.</OutputPath>
     <Name>Mantis</Name>
     <RootNamespace>Mantis</RootNamespace>
-    <TestFramework>pytest</TestFramework>
+    <TestFramework>none</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,20 +25,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="api.py" />
+    <Compile Include="a\all.py" />
+    <Compile Include="a\flag.py" />
+    <Compile Include="d\all.py" />
+    <Compile Include="d\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Mantis.py" />
-    <Compile Include="util\data.py" />
-    <Compile Include="util\Scan\Discover.py" />
-    <Compile Include="util\IP.py" />
-    <Compile Include="util\Scan\__init__.py">
+    <Compile Include="a\target.py" />
+    <Compile Include="a\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="util\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="m\mantis.py" />
+    <Compile Include="m\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="util\" />
-    <Folder Include="util\Scan\" />
+    <Folder Include="a\" />
+    <Folder Include="d\" />
+    <Folder Include="m\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

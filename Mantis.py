@@ -1,6 +1,4 @@
-from util import IP
-from util.data import MantisProj
+from api import *
 
 if __name__ == '__main__':
-    
-    pass
+    embed()

@@ -1,6 +1,0 @@
-class MantisProj(object):
-    pass
-
-
-
-

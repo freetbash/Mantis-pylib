@@ -1,0 +1,3 @@
+ipython
+pyperclip
+requests
