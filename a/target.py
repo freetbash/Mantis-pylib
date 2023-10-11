@@ -38,20 +38,28 @@ class ipr:
        
     def __str__(self):
         return str(self.d)
+    def __len__(self):
+        return len(self.d)
 
 
-
-def cip(ip_prefix, begin=1, end=255):
+def gip(ip_template, begin=1, end=255):
     """
     Generate ip
-    cip("192.168.0", 1, 255)-
+    gip("192.168.0.{}", 1, 255)-
     """
-    return ipr([ip_prefix+'.' + str(i) for i in range(begin, end+1)])
+    return ipr([ip_template.format(i) for i in range(begin, end+1)])
     
+def lpip(ip_list, port):
+    """
+    use ipr to generate ip:port
+    lpip(ipr, 4001, 4010)
+    """
+    return ipr([i+':'+str(port) for i in ip_list.d])
+
 def pip(ip, begin, end):
     """
     Generate ip:port
-    pip("192.168.0.103",4001,4010)
+    pip("192.168.0.103", 4001, 4010)
     """
     return ipr([ip+':'+str(i) for i in range(begin, end+1)])
 

@@ -1,7 +1,7 @@
 def help():
     print("""
 func:      
-    cip
+    gip
     pip  
     sf
     gf
