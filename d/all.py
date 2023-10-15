@@ -1,6 +1,1 @@
-class my_class(object):
-    pass
-
-
-
-
+from .ssh_passwd import *

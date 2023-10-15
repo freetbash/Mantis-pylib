@@ -29,6 +29,7 @@
     <Compile Include="a\all.py" />
     <Compile Include="a\flag.py" />
     <Compile Include="d\all.py" />
+    <Compile Include="d\ssh_passwd.py" />
     <Compile Include="d\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -39,11 +40,18 @@
     </Compile>
     <Compile Include="m\mantis.py" />
     <Compile Include="m\__init__.py" />
+    <Compile Include="t\all.py" />
+    <Compile Include="t\ipr.py" />
+    <Compile Include="t\project.py" />
+    <Compile Include="t\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="a\" />
     <Folder Include="d\" />
     <Folder Include="m\" />
+    <Folder Include="t\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />

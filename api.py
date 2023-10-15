@@ -1,8 +1,11 @@
-from a.all import *
+from IPython import start_ipython
+
+from t.all import *
 from d.all import *
+from a.all import *
+
 from m import *
 
-from IPython import start_ipython
 
 banner = "\n\t._ _    _.  ._   _|_  o   _ \n\t| | |  (_|  | |   |_  |  _> \n\n"
 
