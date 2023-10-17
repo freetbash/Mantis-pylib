@@ -1,6 +1,6 @@
 from t.all import *
 import requests
-# import asyncio
+
 
 def gip(ip_template:ipr, begin=1, end=255):
     """
