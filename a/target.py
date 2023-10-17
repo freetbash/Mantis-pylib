@@ -23,11 +23,11 @@ def pip(ip:str, begin:int, end:int):
     """
     return ipr([ip+':'+str(i) for i in range(begin, end+1)])
 
-def lhip(ipr:ipr, h:str="http"):
+def lhip(ips:ipr, h:str="http"):
     """
     add http or https to ipr
     """
-    return ipr([h+'://'+i for i in ipr.d])
+    return ipr([h+'://'+i for i in ips.d])
 
 def it(file:str="ip.txt"):
     """
