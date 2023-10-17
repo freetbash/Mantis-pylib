@@ -1,2 +1,2 @@
-from .target import *
-from .flag import *
+from a.target import *
+from a.flag import *

@@ -1,1 +1,1 @@
-from .ssh_passwd import *
+from d.ssh_passwd import *

@@ -12,7 +12,7 @@ def gip(ip_template:ipr, begin=1, end=255):
 def lpip(ip_list:ipr, port=80):
     """
     use ipr to generate ip:port
-    lpip(ipr, 4001, 4010)
+    lpip(ipr, 80)
     """
     return ipr([i+':'+str(port) for i in ip_list.d])
 

@@ -1,6 +1,4 @@
-
 from t.all import *
-from threading import Thread
 import paramiko
 
 

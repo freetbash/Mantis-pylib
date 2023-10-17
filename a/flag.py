@@ -1,4 +1,4 @@
-from .target import *
+from a.target import *
 
 def sf(flag:str, func, **payloads):
     """

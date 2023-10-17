@@ -1,2 +1,2 @@
-from .ipr import ipr
-from .project import mp, MP
+from t.ipr import ipr
+from t.project import mp, MP
